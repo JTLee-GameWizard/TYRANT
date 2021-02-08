@@ -1,31 +1,18 @@
-#include <TYRANT/AssetManager.h>
-#include <iostream>
+#include "TYRANT/AssetManager.h"
 namespace Tyrant
 {
-	sf::Texture& AssetManager::LoadTexture(const std::string& name, const std::string& dir)
+
+	sf::Texture& AssetManager::LoadTexture(const std::string& dir /*= ""*/)
 	{
-		if (s_Textures.find(name)!=s_Textures.end())
+		if (m_Textures.find(dir) == m_Textures.end())
 		{
-			return s_Textures[name];
-		}
-		else
-		{
-			//need to load the texture
-			sf::Texture newTex;
-			if (newTex.loadFromFile(dir))
+			sf::Texture tx;
+			if (tx.loadFromFile(dir))
 			{
-				s_Textures[name] = newTex;
-				return s_Textures[name];
+				m_Textures[dir] = tx;
 			}
 		}
-
-		std::cout << "Texture loading with name: " << name << ", and path: " << dir << " Failed" << std::endl;
-		return s_dummyTexture;
+		return m_Textures[dir];
 	}
 
-	Tyrant::AssetManager& GetAssetManager()
-	{
-		static AssetManager assetManager;
-		return assetManager;
-	}
 }

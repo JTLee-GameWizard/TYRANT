@@ -1,50 +1,49 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
+    <ClCompile Include="E:\Dev\TYRANT_ENGINE\TYRANT\CMakeFiles\TYRANT.dir\cmake_pch.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="E:\Dev\TYRANT_ENGINE\TYRANT\src\Application.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\Dev\TYRANT_ENGINE\TYRANT\src\AssetManager.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\Dev\TYRANT_ENGINE\TYRANT\src\Entity.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="E:\Dev\TYRANT_ENGINE\TYRANT\src\Level.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\Dev\TYRANT_ENGINE\TYRANT\src\Tyrant.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\Dev\TYRANT_ENGINE\TYRANT\src\Window.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
+    <ClCompile Include="src\AssetManager.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="E:\Dev\TYRANT_ENGINE\TYRANT\include\TYRANT\Application.h">
+    <ClInclude Include="E:\Dev\TYRANT_ENGINE\TYRANT\include\Tyrant\Application.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\Dev\TYRANT_ENGINE\TYRANT\include\TYRANT\AssetManager.h">
+    <ClInclude Include="E:\Dev\TYRANT_ENGINE\TYRANT\include\Tyrant\Core.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\Dev\TYRANT_ENGINE\TYRANT\include\TYRANT\Core.h">
+    <ClInclude Include="E:\Dev\TYRANT_ENGINE\TYRANT\include\Tyrant\EntryPoint.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\Dev\TYRANT_ENGINE\TYRANT\include\TYRANT\Entity.h">
+    <ClInclude Include="E:\Dev\TYRANT_ENGINE\TYRANT\include\Tyrant\Level.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\Dev\TYRANT_ENGINE\TYRANT\include\TYRANT\EntryPoint.h">
+    <ClInclude Include="E:\Dev\TYRANT_ENGINE\TYRANT\include\Tyrant\Tyrant.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\Dev\TYRANT_ENGINE\TYRANT\include\TYRANT\Level.h">
+    <ClInclude Include="E:\Dev\TYRANT_ENGINE\TYRANT\include\Tyrant\pch.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\Dev\TYRANT_ENGINE\TYRANT\include\TYRANT\Tyrant.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="E:\Dev\TYRANT_ENGINE\TYRANT\CMakeFiles\TYRANT.dir\Debug\cmake_pch.hxx">
+      <Filter>Precompile Header File</Filter>
     </ClInclude>
-    <ClInclude Include="E:\Dev\TYRANT_ENGINE\TYRANT\include\TYRANT\Window\Window.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="E:\Dev\TYRANT_ENGINE\TYRANT\CMakeFiles\TYRANT.dir\Release\cmake_pch.hxx">
+      <Filter>Precompile Header File</Filter>
     </ClInclude>
+    <ClInclude Include="E:\Dev\TYRANT_ENGINE\TYRANT\CMakeFiles\TYRANT.dir\MinSizeRel\cmake_pch.hxx">
+      <Filter>Precompile Header File</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Dev\TYRANT_ENGINE\TYRANT\CMakeFiles\TYRANT.dir\RelWithDebInfo\cmake_pch.hxx">
+      <Filter>Precompile Header File</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Tyrant\AssetManager.h" />
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="E:\Dev\TYRANT_ENGINE\TYRANT\CMakeLists.txt" />
@@ -52,6 +51,9 @@
   <ItemGroup>
     <Filter Include="Header Files">
       <UniqueIdentifier>{82E2AD87-42E0-36BC-8F62-B260570DC536}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Precompile Header File">
+      <UniqueIdentifier>{B31C0A25-EE97-3548-851C-CA3362E686AA}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files">
       <UniqueIdentifier>{61F633F0-A7F0-3B13-B4C6-B647DDF97D05}</UniqueIdentifier>

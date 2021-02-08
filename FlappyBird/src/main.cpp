@@ -1,6 +1,9 @@
 #include <iostream>
 #include <TYRANT/Tyrant.h>
-Tyrant::GameApp* Tyrant::CreateGameApp()
+#include "FlappyBirdGame.h"
+
+Tyrant::GameApplication* Tyrant::CreateApplication()
 {
-	return new GameApp();
+	return new FlappyBirdGame();
 }
+

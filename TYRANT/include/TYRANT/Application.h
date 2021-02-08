@@ -1,24 +1,33 @@
 #pragma once
-#include <TYRANT/core.h>
+#include <Tyrant/Core.h>
+#include <SFML/Graphics.hpp>
 #include <SFML/System.hpp>
-#include <memory>
+#include <TYRANT/AssetManager.h>
 namespace Tyrant
 {
-	class TYRENTY_API GameApp
+	class TYRANT_API GameApplication
 	{
 	public:
-		GameApp(int width, int height, const char* title);
-		GameApp();
-		virtual ~GameApp();
+		GameApplication();
+		virtual void Run();
+		virtual void Pause();
+		virtual ~GameApplication();
+		void LoadLevel(class Level* LevelToLoad);
+		AssetManager& GetAssetManager();
+	protected:
+		virtual void Tick(float DeltaTime);
+		virtual void BeginPlay();
 		virtual void Init();
-		void Run();
-		void Tick(float DeltaTime);
-		void LoadLevel(std::shared_ptr<class Level> levelToLoad);
+		virtual void DrawLevel();
 	private:
-		sf::Clock m_TickingClock;
-		std::unique_ptr<class Window> m_window;
-		std::shared_ptr<class Level> CurrentLevel;
+		virtual void UnLoadCurrentLevel();
+		void PullWindowEvents();
+	private:
+		sf::RenderWindow m_window;
+		sf::Clock m_TickTimer;
+		class Level* m_CurrentLevel;
+		AssetManager m_assetManager;
 	};
-	GameApp* CreateGameApp();
+	GameApplication* CreateApplication();
+	GameApplication* GetApplication();
 }
-

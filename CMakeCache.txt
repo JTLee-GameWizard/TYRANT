@@ -117,7 +117,7 @@ CMAKE_INSTALL_MANDIR:PATH=
 CMAKE_INSTALL_OLDINCLUDEDIR:PATH=/usr/include
 
 //Install path prefix, prepended onto install directories.
-CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/TYRANT
+CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/FlappyBird
 
 //Run-time variable data (LOCALSTATEDIR/run)
 CMAKE_INSTALL_RUNSTATEDIR:PATH=
@@ -325,12 +325,6 @@ SFML_USE_STATIC_STD_LIBS:BOOL=FALSE
 
 //TRUE to use system dependencies, FALSE to use the bundled ones.
 SFML_USE_SYSTEM_DEPS:BOOL=FALSE
-
-//Value Computed by CMake
-TYRANT_BINARY_DIR:STATIC=E:/Dev/TYRANT_ENGINE
-
-//Value Computed by CMake
-TYRANT_SOURCE_DIR:STATIC=E:/Dev/TYRANT_ENGINE
 
 //Path to a library.
 VORBISENC_LIBRARY:FILEPATH=E:/Dev/TYRANT_ENGINE/TYRANT/vendor/sfml/extlibs/libs-msvc-universal/x64/vorbisenc.lib
@@ -567,5 +561,5 @@ VORBIS_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: VORBIS_LIBRARY
 VORBIS_LIBRARY-ADVANCED:INTERNAL=1
 //CMAKE_INSTALL_PREFIX during last run
-_GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=C:/Program Files (x86)/TYRANT
+_GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=C:/Program Files (x86)/FlappyBird
 

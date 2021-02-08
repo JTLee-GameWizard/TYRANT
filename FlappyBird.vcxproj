@@ -93,7 +93,6 @@
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
       <Optimization>Disabled</Optimization>
-      <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <UseFullPaths>false</UseFullPaths>
@@ -125,7 +124,7 @@ exit /b %1
 if %errorlevel% neq 0 goto :VCEnd</Command>
     </PostBuildEvent>
     <Link>
-      <AdditionalDependencies>TYRANT\Debug\TYRANT.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>TYRANT\Debug\TYRANT.lib;TYRANT\vendor\sfml\lib\Debug\sfml-audio-d.lib;TYRANT\vendor\sfml\lib\Debug\sfml-graphics-d.lib;TYRANT\vendor\sfml\lib\Debug\sfml-network-d.lib;TYRANT\vendor\sfml\lib\Debug\sfml-window-d.lib;TYRANT\vendor\sfml\lib\Debug\sfml-system-d.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -145,7 +144,6 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
       <Optimization>MaxSpeed</Optimization>
-      <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <UseFullPaths>false</UseFullPaths>
@@ -179,7 +177,7 @@ exit /b %1
 if %errorlevel% neq 0 goto :VCEnd</Command>
     </PostBuildEvent>
     <Link>
-      <AdditionalDependencies>TYRANT\Release\TYRANT.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>TYRANT\Release\TYRANT.lib;TYRANT\vendor\sfml\lib\Release\sfml-audio.lib;TYRANT\vendor\sfml\lib\Release\sfml-graphics.lib;TYRANT\vendor\sfml\lib\Release\sfml-network.lib;TYRANT\vendor\sfml\lib\Release\sfml-window.lib;TYRANT\vendor\sfml\lib\Release\sfml-system.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
@@ -199,7 +197,6 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
       <Optimization>MinSpace</Optimization>
-      <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <UseFullPaths>false</UseFullPaths>
@@ -233,7 +230,7 @@ exit /b %1
 if %errorlevel% neq 0 goto :VCEnd</Command>
     </PostBuildEvent>
     <Link>
-      <AdditionalDependencies>TYRANT\MinSizeRel\TYRANT.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>TYRANT\MinSizeRel\TYRANT.lib;TYRANT\vendor\sfml\lib\MinSizeRel\sfml-audio.lib;TYRANT\vendor\sfml\lib\MinSizeRel\sfml-graphics.lib;TYRANT\vendor\sfml\lib\MinSizeRel\sfml-network.lib;TYRANT\vendor\sfml\lib\MinSizeRel\sfml-window.lib;TYRANT\vendor\sfml\lib\MinSizeRel\sfml-system.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
@@ -254,7 +251,6 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
       <Optimization>MaxSpeed</Optimization>
-      <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <UseFullPaths>false</UseFullPaths>
@@ -286,7 +282,7 @@ exit /b %1
 if %errorlevel% neq 0 goto :VCEnd</Command>
     </PostBuildEvent>
     <Link>
-      <AdditionalDependencies>TYRANT\RelWithDebInfo\TYRANT.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>TYRANT\RelWithDebInfo\TYRANT.lib;TYRANT\vendor\sfml\lib\RelWithDebInfo\sfml-audio.lib;TYRANT\vendor\sfml\lib\RelWithDebInfo\sfml-graphics.lib;TYRANT\vendor\sfml\lib\RelWithDebInfo\sfml-network.lib;TYRANT\vendor\sfml\lib\RelWithDebInfo\sfml-window.lib;TYRANT\vendor\sfml\lib\RelWithDebInfo\sfml-system.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -356,7 +352,84 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="E:\Dev\TYRANT_ENGINE\FlappyBird\src\main.cpp" />
+    <ClCompile Include="E:\Dev\TYRANT_ENGINE\CMakeFiles\FlappyBird.dir\cmake_pch.cxx">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:/Dev/TYRANT_ENGINE/CMakeFiles/FlappyBird.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:/Dev/TYRANT_ENGINE/CMakeFiles/FlappyBird.dir/Debug/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:/Dev/TYRANT_ENGINE/FlappyBird.dir/Debug/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:/Dev/TYRANT_ENGINE/CMakeFiles/FlappyBird.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:/Dev/TYRANT_ENGINE/CMakeFiles/FlappyBird.dir/Release/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:/Dev/TYRANT_ENGINE/FlappyBird.dir/Release/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:/Dev/TYRANT_ENGINE/CMakeFiles/FlappyBird.dir/MinSizeRel/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:/Dev/TYRANT_ENGINE/CMakeFiles/FlappyBird.dir/MinSizeRel/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:/Dev/TYRANT_ENGINE/FlappyBird.dir/MinSizeRel/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:/Dev/TYRANT_ENGINE/CMakeFiles/FlappyBird.dir/RelWithDebInfo/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:/Dev/TYRANT_ENGINE/CMakeFiles/FlappyBird.dir/RelWithDebInfo/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:/Dev/TYRANT_ENGINE/FlappyBird.dir/RelWithDebInfo/cmake_pch.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="E:\Dev\TYRANT_ENGINE\FlappyBird\src\FlappyBirdGame.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:/Dev/TYRANT_ENGINE/CMakeFiles/FlappyBird.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:/Dev/TYRANT_ENGINE/CMakeFiles/FlappyBird.dir/Debug/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:/Dev/TYRANT_ENGINE/FlappyBird.dir/Debug/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:/Dev/TYRANT_ENGINE/CMakeFiles/FlappyBird.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:/Dev/TYRANT_ENGINE/CMakeFiles/FlappyBird.dir/Release/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:/Dev/TYRANT_ENGINE/FlappyBird.dir/Release/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:/Dev/TYRANT_ENGINE/CMakeFiles/FlappyBird.dir/MinSizeRel/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:/Dev/TYRANT_ENGINE/CMakeFiles/FlappyBird.dir/MinSizeRel/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:/Dev/TYRANT_ENGINE/FlappyBird.dir/MinSizeRel/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:/Dev/TYRANT_ENGINE/CMakeFiles/FlappyBird.dir/RelWithDebInfo/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:/Dev/TYRANT_ENGINE/CMakeFiles/FlappyBird.dir/RelWithDebInfo/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:/Dev/TYRANT_ENGINE/FlappyBird.dir/RelWithDebInfo/cmake_pch.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClInclude Include="E:\Dev\TYRANT_ENGINE\FlappyBird\src\FlappyBirdGame.h" />
+    <ClCompile Include="E:\Dev\TYRANT_ENGINE\FlappyBird\src\MainMenuLevel.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:/Dev/TYRANT_ENGINE/CMakeFiles/FlappyBird.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:/Dev/TYRANT_ENGINE/CMakeFiles/FlappyBird.dir/Debug/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:/Dev/TYRANT_ENGINE/FlappyBird.dir/Debug/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:/Dev/TYRANT_ENGINE/CMakeFiles/FlappyBird.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:/Dev/TYRANT_ENGINE/CMakeFiles/FlappyBird.dir/Release/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:/Dev/TYRANT_ENGINE/FlappyBird.dir/Release/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:/Dev/TYRANT_ENGINE/CMakeFiles/FlappyBird.dir/MinSizeRel/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:/Dev/TYRANT_ENGINE/CMakeFiles/FlappyBird.dir/MinSizeRel/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:/Dev/TYRANT_ENGINE/FlappyBird.dir/MinSizeRel/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:/Dev/TYRANT_ENGINE/CMakeFiles/FlappyBird.dir/RelWithDebInfo/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:/Dev/TYRANT_ENGINE/CMakeFiles/FlappyBird.dir/RelWithDebInfo/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:/Dev/TYRANT_ENGINE/FlappyBird.dir/RelWithDebInfo/cmake_pch.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClInclude Include="E:\Dev\TYRANT_ENGINE\FlappyBird\src\MainMenuLevel.h" />
+    <ClCompile Include="E:\Dev\TYRANT_ENGINE\FlappyBird\src\main.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:/Dev/TYRANT_ENGINE/CMakeFiles/FlappyBird.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:/Dev/TYRANT_ENGINE/CMakeFiles/FlappyBird.dir/Debug/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:/Dev/TYRANT_ENGINE/FlappyBird.dir/Debug/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:/Dev/TYRANT_ENGINE/CMakeFiles/FlappyBird.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:/Dev/TYRANT_ENGINE/CMakeFiles/FlappyBird.dir/Release/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:/Dev/TYRANT_ENGINE/FlappyBird.dir/Release/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:/Dev/TYRANT_ENGINE/CMakeFiles/FlappyBird.dir/MinSizeRel/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:/Dev/TYRANT_ENGINE/CMakeFiles/FlappyBird.dir/MinSizeRel/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:/Dev/TYRANT_ENGINE/FlappyBird.dir/MinSizeRel/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:/Dev/TYRANT_ENGINE/CMakeFiles/FlappyBird.dir/RelWithDebInfo/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:/Dev/TYRANT_ENGINE/CMakeFiles/FlappyBird.dir/RelWithDebInfo/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:/Dev/TYRANT_ENGINE/FlappyBird.dir/RelWithDebInfo/cmake_pch.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClInclude Include="E:\Dev\TYRANT_ENGINE\CMakeFiles\FlappyBird.dir\Debug\cmake_pch.hxx" />
+    <ClInclude Include="E:\Dev\TYRANT_ENGINE\CMakeFiles\FlappyBird.dir\Release\cmake_pch.hxx" />
+    <ClInclude Include="E:\Dev\TYRANT_ENGINE\CMakeFiles\FlappyBird.dir\MinSizeRel\cmake_pch.hxx" />
+    <ClInclude Include="E:\Dev\TYRANT_ENGINE\CMakeFiles\FlappyBird.dir\RelWithDebInfo\cmake_pch.hxx" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="E:\Dev\TYRANT_ENGINE\ZERO_CHECK.vcxproj">
@@ -368,6 +441,26 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ProjectReference Include="E:\Dev\TYRANT_ENGINE\TYRANT\TYRANT.vcxproj">
       <Project>{4198EF7E-1514-36B9-83EB-46C4A6071C77}</Project>
       <Name>TYRANT</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Dev\TYRANT_ENGINE\TYRANT\vendor\sfml\src\SFML\Audio\sfml-audio.vcxproj">
+      <Project>{B8BD22B9-40D5-3F93-A7EA-3ACB9981D8EC}</Project>
+      <Name>sfml-audio</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Dev\TYRANT_ENGINE\TYRANT\vendor\sfml\src\SFML\Graphics\sfml-graphics.vcxproj">
+      <Project>{A9B5EABC-2536-3EFF-9C1B-F221CA3AB0F5}</Project>
+      <Name>sfml-graphics</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Dev\TYRANT_ENGINE\TYRANT\vendor\sfml\src\SFML\Network\sfml-network.vcxproj">
+      <Project>{DA41F760-D574-34CB-AD4C-8CECFC113A87}</Project>
+      <Name>sfml-network</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Dev\TYRANT_ENGINE\TYRANT\vendor\sfml\src\SFML\System\sfml-system.vcxproj">
+      <Project>{85F009DB-06C0-30C4-A93D-585CA833F8E9}</Project>
+      <Name>sfml-system</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Dev\TYRANT_ENGINE\TYRANT\vendor\sfml\src\SFML\Window\sfml-window.vcxproj">
+      <Project>{A323EB11-5DBE-3DAA-AD73-C420E497C6DF}</Project>
+      <Name>sfml-window</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

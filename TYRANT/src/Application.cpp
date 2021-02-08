@@ -1,66 +1,96 @@
-#include "TYRANT/Application.h"
-#include <iostream>
-#include <TYRANT/Window/Window.h>
+#include <TYRANT/Application.h>
 #include <TYRANT/Level.h>
 namespace Tyrant
 {
-
-	GameApp::GameApp()
-		: m_window(new Window())
+	GameApplication::GameApplication()
+		: m_window(sf::VideoMode(768, 1024),"TYRANT DEFAULT APP"),
+		m_CurrentLevel(nullptr),
+		m_assetManager()
 	{
 		Init();
 	}
 
-	GameApp::GameApp(int width, int height, const char* title)
-		:m_window(new Window(width, height, title))
+	void GameApplication::Run()
 	{
-
-	}
-
-	GameApp::~GameApp()
-	{
-
-	}
-
-	void GameApp::Init()
-	{
-		LoadLevel(std::shared_ptr<Level>(new Level));
-	}
-
-	void GameApp::Run()
-	{
-		//begin Play
-		if (CurrentLevel)
+		BeginPlay();
+		float previousFrameTime = m_TickTimer.getElapsedTime().asSeconds();
+		while (m_window.isOpen())
 		{
-			CurrentLevel->LevelBegin();
-		}
-
-		float LastFrameTime = m_TickingClock.getElapsedTime().asSeconds();
-		while (m_window->isOpen())
-		{
-			float currentTime = m_TickingClock.getElapsedTime().asSeconds();
-			float DeltaTime = currentTime - LastFrameTime;
-			LastFrameTime = currentTime;
-			m_window->CheckInput();
+			float currentTime = m_TickTimer.getElapsedTime().asSeconds();
+			float DeltaTime = currentTime - previousFrameTime;
+			previousFrameTime = currentTime;
+			PullWindowEvents();
 			Tick(DeltaTime);
 		}
 	}
 
-	void GameApp::Tick(float DeltaTime)
+	void GameApplication::Init()
 	{
-		if (CurrentLevel)
+
+	}
+
+	void GameApplication::DrawLevel()
+	{
+		m_window.clear();
+		if (m_CurrentLevel)
 		{
-			CurrentLevel->Tick(DeltaTime);
-			m_window->DrawLevel(CurrentLevel);
+			m_window.draw(m_CurrentLevel->GetBackGround());
+			//draw stuff in current level...
+		}
+		m_window.display();
+	}
+
+	void GameApplication::UnLoadCurrentLevel()
+	{
+		if (m_CurrentLevel)
+		{
+			delete m_CurrentLevel;
+			m_CurrentLevel = nullptr;
 		}
 	}
 
-	void GameApp::LoadLevel(std::shared_ptr<class Level> levelToLoad)
+	void GameApplication::PullWindowEvents()
 	{
-		if (CurrentLevel)
+		sf::Event event;
+		m_window.pollEvent(event);
+		if (event.type==sf::Event::Closed)
 		{
-			CurrentLevel->EndLevel();
+			m_window.close();
 		}
-		CurrentLevel = levelToLoad;
+	}
+
+	void GameApplication::BeginPlay()
+	{
+
+	}
+
+	void GameApplication::Tick(float DeltaTime)
+	{
+		if (m_CurrentLevel)
+		{
+			m_CurrentLevel->Tick(DeltaTime);
+			DrawLevel();
+		}
+	}
+
+	void GameApplication::Pause()
+	{
+
+	}
+
+	GameApplication::~GameApplication()
+	{
+		UnLoadCurrentLevel();
+	}
+
+	void GameApplication::LoadLevel(class Level* LevelToLoad)
+	{
+		UnLoadCurrentLevel();
+		m_CurrentLevel = LevelToLoad;
+	}
+
+	Tyrant::AssetManager& GameApplication::GetAssetManager()
+	{
+		return m_assetManager;
 	}
 }

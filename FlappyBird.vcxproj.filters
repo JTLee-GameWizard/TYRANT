@@ -1,14 +1,49 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
+    <ClCompile Include="E:\Dev\TYRANT_ENGINE\CMakeFiles\FlappyBird.dir\cmake_pch.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Dev\TYRANT_ENGINE\FlappyBird\src\FlappyBirdGame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Dev\TYRANT_ENGINE\FlappyBird\src\MainMenuLevel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="E:\Dev\TYRANT_ENGINE\FlappyBird\src\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="E:\Dev\TYRANT_ENGINE\FlappyBird\src\FlappyBirdGame.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Dev\TYRANT_ENGINE\FlappyBird\src\MainMenuLevel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Dev\TYRANT_ENGINE\CMakeFiles\FlappyBird.dir\Debug\cmake_pch.hxx">
+      <Filter>Precompile Header File</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Dev\TYRANT_ENGINE\CMakeFiles\FlappyBird.dir\Release\cmake_pch.hxx">
+      <Filter>Precompile Header File</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Dev\TYRANT_ENGINE\CMakeFiles\FlappyBird.dir\MinSizeRel\cmake_pch.hxx">
+      <Filter>Precompile Header File</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Dev\TYRANT_ENGINE\CMakeFiles\FlappyBird.dir\RelWithDebInfo\cmake_pch.hxx">
+      <Filter>Precompile Header File</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
     <CustomBuild Include="E:\Dev\TYRANT_ENGINE\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{82E2AD87-42E0-36BC-8F62-B260570DC536}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Precompile Header File">
+      <UniqueIdentifier>{B31C0A25-EE97-3548-851C-CA3362E686AA}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Source Files">
       <UniqueIdentifier>{61F633F0-A7F0-3B13-B4C6-B647DDF97D05}</UniqueIdentifier>
     </Filter>

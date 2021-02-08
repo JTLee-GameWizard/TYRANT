@@ -11,8 +11,10 @@ add_library(${TYRANT_PRJ_NAME} SHARED ${TyrantSrc})
 target_include_directories(${TYRANT_PRJ_NAME} PUBLIC include)
 target_compile_definitions(${TYRANT_PRJ_NAME} PRIVATE TYRANT_DLL_EXP)
 
+target_precompile_headers(${TYRANT_PRJ_NAME} PUBLIC include/TYRANT/pch.h)
+
 add_subdirectory(vendor/sfml)
-target_link_libraries(${TYRANT_PRJ_NAME} PRIVATE
+target_link_libraries(${TYRANT_PRJ_NAME} PUBLIC
 	sfml-audio
 	sfml-graphics
 	sfml-network

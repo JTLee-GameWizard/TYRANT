@@ -1,49 +1,30 @@
-#include <TYRANT/Level.h>
-#include <TYRANT/Entity.h>
-#include <TYRANT/AssetManager.h>
-#include <iostream>
+#include <Tyrant/Level.h>
 namespace Tyrant
 {
+	Level::Level(const sf::Texture& backgroudTexture)
+		: m_Backgroud(backgroudTexture)
+	{
+
+	}
 
 	Level::Level()
-		:m_BackGround(sf::Texture())
 	{
-		SetBackGround(GetAssetManager().LoadTexture("Bg", "Resources/res/sky.png"));
+
 	}
 
-	Level::~Level()
+	void Level::BeginPlay()
 	{
-		std::cout << "level destroied" << std::endl;
-	}
 
-	void Level::LevelBegin()
-	{
-		for (auto Item : m_Entities)
-		{
-			Item->BeginPlay();
-		}
 	}
 
 	void Level::Tick(float DeltaTime)
 	{
-		for (auto Item : m_Entities)
-		{
-			Item->Tick(DeltaTime);
-		}
+
 	}
 
-	void Level::EndLevel()
+	void Level::SetBackGround(const sf::Texture& background)
 	{
-		m_Entities.clear();
+		m_Backgroud.setTexture(background);
 	}
 
-	void Level::SetBackGround(const sf::Texture& bg)
-	{
-		m_BackGround.setTexture(bg);
-	}
-
-	sf::Sprite& Level::GetBackGround()
-	{
-		return m_BackGround;
-	}
 }

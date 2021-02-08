@@ -1,9 +1,16 @@
-#pragma once
-extern Tyrant::GameApp* Tyrant::CreateGameApp();
+#include <TYRANT/Application.h>
+extern Tyrant::GameApplication* Tyrant::CreateApplication();
+Tyrant::GameApplication* Tyrant::GetApplication()
+{
+	static Tyrant::GameApplication* Application = Tyrant::CreateApplication();
+	return Application;
+}
 int main()
 {
-	Tyrant::GameApp* gameApp = Tyrant::CreateGameApp();
-	gameApp->Run();
-	delete gameApp;
+	if (Tyrant::GetApplication())
+	{
+		Tyrant::GetApplication()->Run();
+		delete Tyrant::GetApplication();
+	}
 	return 0;
 }
