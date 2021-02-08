@@ -1,7 +1,6 @@
 #include <iostream>
 #include <TYRANT/Tyrant.h>
-int main()
+Tyrant::GameApp* Tyrant::CreateGameApp()
 {
-	Tyrant::printEngineName();
-	std::cout << "this is the flappy bird project" << std::endl;
+	return new GameApp();
 }

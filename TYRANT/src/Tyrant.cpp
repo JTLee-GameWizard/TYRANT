@@ -1,6 +1,9 @@
-#include "TYRANT/Tyrant.h"
-
-void TYRANT_API Tyrant::printEngineName()
+#include <TYRANT/core.h>
+#include <iostream>
+namespace Tyrant
 {
-	std::cout << "you are using tyrant engine" << std::endl;
+	void TYRENTY_API PrintTyRantInfo()
+	{
+		std::cout << "you are using tyrant engine beta" << std::endl;
+	}
 }

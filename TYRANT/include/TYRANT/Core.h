@@ -1,6 +1,5 @@
-#pragma once
-#ifdef TYRANT_DLL_EXPT
-	#define TYRANT_API _declspec(dllexport)
+#ifdef TYRANT_DLL_EXP
+	#define TYRENTY_API __declspec(dllexport)
 #else
-	#define TYRANT_API _declspec(dllimport)
-#endif // TYRANT_DLL_EXPT
+	#define  TYRENTY_API __declspec(dllimport)
+#endif // TYRANT_DLL_EXP

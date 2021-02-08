@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="E:\Dev\TYRANT_ENGINE\CMakeFiles\3885e9e7a21c99da24cc3c9521a4ed04\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{4FF824A4-97BB-3BEF-A19D-A21299B6B7F1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

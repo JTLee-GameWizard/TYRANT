@@ -173,9 +173,33 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Project>{994274EA-1FA6-30A1-B2EA-FC68A37ABE85}</Project>
       <Name>FlappyBird</Name>
     </ProjectReference>
-    <ProjectReference Include="E:\Dev\TYRANT_ENGINE\TYRANT\TYRANT_ENGINE.vcxproj">
-      <Project>{C047D613-7A35-3F3A-8232-AFE634C13EC4}</Project>
-      <Name>TYRANT_ENGINE</Name>
+    <ProjectReference Include="E:\Dev\TYRANT_ENGINE\TYRANT\TYRANT.vcxproj">
+      <Project>{4198EF7E-1514-36B9-83EB-46C4A6071C77}</Project>
+      <Name>TYRANT</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Dev\TYRANT_ENGINE\TYRANT\vendor\sfml\src\SFML\Audio\sfml-audio.vcxproj">
+      <Project>{B8BD22B9-40D5-3F93-A7EA-3ACB9981D8EC}</Project>
+      <Name>sfml-audio</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Dev\TYRANT_ENGINE\TYRANT\vendor\sfml\src\SFML\Graphics\sfml-graphics.vcxproj">
+      <Project>{A9B5EABC-2536-3EFF-9C1B-F221CA3AB0F5}</Project>
+      <Name>sfml-graphics</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Dev\TYRANT_ENGINE\TYRANT\vendor\sfml\src\SFML\Main\sfml-main.vcxproj">
+      <Project>{F1124420-7F55-365D-894E-F39333022848}</Project>
+      <Name>sfml-main</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Dev\TYRANT_ENGINE\TYRANT\vendor\sfml\src\SFML\Network\sfml-network.vcxproj">
+      <Project>{DA41F760-D574-34CB-AD4C-8CECFC113A87}</Project>
+      <Name>sfml-network</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Dev\TYRANT_ENGINE\TYRANT\vendor\sfml\src\SFML\System\sfml-system.vcxproj">
+      <Project>{85F009DB-06C0-30C4-A93D-585CA833F8E9}</Project>
+      <Name>sfml-system</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Dev\TYRANT_ENGINE\TYRANT\vendor\sfml\src\SFML\Window\sfml-window.vcxproj">
+      <Project>{A323EB11-5DBE-3DAA-AD73-C420E497C6DF}</Project>
+      <Name>sfml-window</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

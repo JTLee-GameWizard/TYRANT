@@ -1,0 +1,4 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.19/Modules/CMakeParseArguments.cmake
+E:/Dev/TYRANT_ENGINE/TYRANT/vendor/sfml/cmake/Macros.cmake
+E:/Dev/TYRANT_ENGINE/TYRANT/vendor/sfml/src/SFML/CMakeLists.txt

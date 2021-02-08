@@ -1,0 +1,12 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.19/Modules/BasicConfigVersion-SameMajorVersion.cmake.in
+C:/Program Files/CMake/share/cmake-3.19/Modules/CMakePackageConfigHelpers.cmake
+C:/Program Files/CMake/share/cmake-3.19/Modules/CheckIncludeFile.cmake
+C:/Program Files/CMake/share/cmake-3.19/Modules/CheckIncludeFileCXX.cmake
+C:/Program Files/CMake/share/cmake-3.19/Modules/CheckTypeSize.cmake
+C:/Program Files/CMake/share/cmake-3.19/Modules/GNUInstallDirs.cmake
+C:/Program Files/CMake/share/cmake-3.19/Modules/WriteBasicConfigVersionFile.cmake
+E:/Dev/TYRANT_ENGINE/TYRANT/vendor/sfml/CMakeLists.txt
+E:/Dev/TYRANT_ENGINE/TYRANT/vendor/sfml/cmake/Config.cmake
+E:/Dev/TYRANT_ENGINE/TYRANT/vendor/sfml/cmake/SFMLConfig.cmake.in
+E:/Dev/TYRANT_ENGINE/TYRANT/vendor/sfml/cmake/SFMLConfigDependencies.cmake.in

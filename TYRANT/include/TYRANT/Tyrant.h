@@ -1,6 +1,8 @@
-#include <iostream>
-#include <TYRANT/Core.h>
+#include <TYRANT/core.h>
+#include <TYRANT/Application.h>
+#include <TYRANT/EntryPoint.h>
+
 namespace Tyrant
 {
-	void TYRANT_API printEngineName();
+	void TYRENTY_API PrintTyRantInfo();
 }
