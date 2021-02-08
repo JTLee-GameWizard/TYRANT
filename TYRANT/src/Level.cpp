@@ -1,17 +1,19 @@
 #include <TYRANT/Level.h>
 #include <TYRANT/Entity.h>
+#include <TYRANT/AssetManager.h>
+#include <iostream>
 namespace Tyrant
 {
 
 	Level::Level()
 		:m_BackGround(sf::Texture())
 	{
-
+		SetBackGround(GetAssetManager().LoadTexture("Bg", "Resources/res/sky.png"));
 	}
 
 	Level::~Level()
 	{
-
+		std::cout << "level destroied" << std::endl;
 	}
 
 	void Level::LevelBegin()

@@ -19,6 +19,11 @@ namespace Tyrant
 		{
 			m_sfGraphWindow.draw(item->GetSprite());
 		}
+		sf::Texture tx;
+		tx.loadFromFile("Resources/res/sky.png");
+		sf::Sprite sp;
+		sp.setTexture(tx);
+		//m_sfGraphWindow.draw(sp);
 		m_sfGraphWindow.display();
 	}
 

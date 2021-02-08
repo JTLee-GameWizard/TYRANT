@@ -2,7 +2,7 @@
 #include <iostream>
 namespace Tyrant
 {
-	sf::Texture AssetManager::LoadTexture(const std::string& name, const std::string& dir)
+	sf::Texture& AssetManager::LoadTexture(const std::string& name, const std::string& dir)
 	{
 		if (s_Textures.find(name)!=s_Textures.end())
 		{

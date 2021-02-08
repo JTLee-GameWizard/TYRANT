@@ -8,7 +8,7 @@ namespace Tyrant
 	GameApp::GameApp()
 		: m_window(new Window())
 	{
-
+		Init();
 	}
 
 	GameApp::GameApp(int width, int height, const char* title)
@@ -24,11 +24,17 @@ namespace Tyrant
 
 	void GameApp::Init()
 	{
-
+		LoadLevel(std::shared_ptr<Level>(new Level));
 	}
 
 	void GameApp::Run()
 	{
+		//begin Play
+		if (CurrentLevel)
+		{
+			CurrentLevel->LevelBegin();
+		}
+
 		float LastFrameTime = m_TickingClock.getElapsedTime().asSeconds();
 		while (m_window->isOpen())
 		{

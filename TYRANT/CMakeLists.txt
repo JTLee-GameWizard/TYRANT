@@ -22,6 +22,13 @@ target_link_libraries(${TYRANT_PRJ_NAME} PRIVATE
 add_custom_command(TARGET ${TYRANT_PRJ_NAME} POST_BUILD
 	COMMAND ${CMAKE_COMMAND} -E copy_directory
 	$<TARGET_FILE_DIR:sfml-system>
-	$<TARGET_FILE_DIR:${TYRANT_PRJ_NAME}>
+	$<TARGET_FILE_DIR:${PROJECT_NAME}>
 )
+
+add_custom_command(TARGET ${TYRANT_PRJ_NAME} POST_BUILD
+	COMMAND ${CMAKE_COMMAND} -E copy_directory
+	$<TARGET_FILE_DIR:${TYRANT_PRJ_NAME}>
+	$<TARGET_FILE_DIR:${PROJECT_NAME}>
+)
+
 target_include_directories(${TYRANT_PRJ_NAME} PUBLIC vendor/sfml/include)

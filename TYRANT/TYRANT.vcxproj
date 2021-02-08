@@ -113,9 +113,18 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message></Message>
+      <Message>	</Message>
       <Command>setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory E:/Dev/TYRANT_ENGINE/TYRANT/vendor/sfml/lib/Debug E:/Dev/TYRANT_ENGINE/TYRANT/Debug
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory E:/Dev/TYRANT_ENGINE/TYRANT/vendor/sfml/lib/Debug E:/Dev/TYRANT_ENGINE/Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory E:/Dev/TYRANT_ENGINE/TYRANT/Debug E:/Dev/TYRANT_ENGINE/Debug
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -167,9 +176,18 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message></Message>
+      <Message>	</Message>
       <Command>setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory E:/Dev/TYRANT_ENGINE/TYRANT/vendor/sfml/lib/Release E:/Dev/TYRANT_ENGINE/TYRANT/Release
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory E:/Dev/TYRANT_ENGINE/TYRANT/vendor/sfml/lib/Release E:/Dev/TYRANT_ENGINE/Release
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory E:/Dev/TYRANT_ENGINE/TYRANT/Release E:/Dev/TYRANT_ENGINE/Release
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -221,9 +239,18 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message></Message>
+      <Message>	</Message>
       <Command>setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory E:/Dev/TYRANT_ENGINE/TYRANT/vendor/sfml/lib/MinSizeRel E:/Dev/TYRANT_ENGINE/TYRANT/MinSizeRel
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory E:/Dev/TYRANT_ENGINE/TYRANT/vendor/sfml/lib/MinSizeRel E:/Dev/TYRANT_ENGINE/MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory E:/Dev/TYRANT_ENGINE/TYRANT/MinSizeRel E:/Dev/TYRANT_ENGINE/MinSizeRel
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -274,9 +301,18 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message></Message>
+      <Message>	</Message>
       <Command>setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory E:/Dev/TYRANT_ENGINE/TYRANT/vendor/sfml/lib/RelWithDebInfo E:/Dev/TYRANT_ENGINE/TYRANT/RelWithDebInfo
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory E:/Dev/TYRANT_ENGINE/TYRANT/vendor/sfml/lib/RelWithDebInfo E:/Dev/TYRANT_ENGINE/RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory E:/Dev/TYRANT_ENGINE/TYRANT/RelWithDebInfo E:/Dev/TYRANT_ENGINE/RelWithDebInfo
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone

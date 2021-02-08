@@ -14,7 +14,7 @@ namespace Tyrant
 			@name name of the texture
 			@dir directory of the texture
 		*/
-		sf::Texture LoadTexture(const std::string& name, const std::string& dir = "");
+		sf::Texture& LoadTexture(const std::string& name, const std::string& dir = "");
 	private:
 		std::map<std::string, sf::Texture> s_Textures;
 		sf::Texture s_dummyTexture;
